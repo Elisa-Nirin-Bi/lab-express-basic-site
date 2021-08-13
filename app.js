@@ -8,15 +8,16 @@ app.get('/', function(request, response){
   response.sendFile(__dirname + '/views/main.html');
 });
 
-app.get('/about', function(request, response){
+app.get('/about', (request, response) => {
   response.sendFile(__dirname + '/views/about.html');
 });
+
 
 app.get('/works', function(request, response){
   response.sendFile(__dirname + '/views/works.html');
 });
 
-app.get('/photoGallery.', function(request, response){
+app.get('/photoGallery', function(request, response){
   response.sendFile(__dirname + '/views/photoGallery.html');
 });
 
